@@ -20,13 +20,31 @@ class SlideShow {
         console.log("number of slides is: " + this.slides.length);
     }
 
-    nextSlide() {
-        console.log("playing next slide!");
-        console.log("next slide index is " + (this.index + 1));
+   nextSlide() {
+        var activeSlide = this.slides[this.index];
+        activeSlide.setAttribute('class', 'slide-item');
+
+        if (this.index >= this.slides.length - 1) {
+            this.slides[0].setAttribute('class', 'slide-item active')
+            this.index = 0 
+        } else {
+            this.slides[this.index + 1].setAttribute('class', 'slide-item active')
+            this.index += 1
+        }
     }
 
     previousSlide() {
-        console.log("playing previous slide!");
-        console.log("next slide index is " + (this.index - 1));
+        var activeSlide = this.slides[this.index]
+        activeSlide.setAttribute('class' ,'slide-item')
+        
+        if(this.index <= 0){
+            
+            this.slides[this.slides.length - 1].setAttribute('class', 'slide-item active')
+            this.index = this.slides.length - 1
+        }else{ 
+            this.slides[this.index - 1].setAttribute('class', 'slide-item active')
+            this.index -= 1 
+        }
+
     }
 }
