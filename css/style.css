@@ -254,7 +254,7 @@ div#contact-form {
 
 
 /* About us page */
-.about-us-section-content {
+.about-us-section-content { /* this creates grid format*/
     display: grid;
     grid-gap: 20px 30px;
     grid-template-columns: 240px auto;
@@ -263,7 +263,7 @@ div#contact-form {
     max-width: 960px;
 }
 
-.about-us-section-content > img {
+.about-us-section-content > img {  /* this instructs image to only occupy 90% of grid width*/
     width: 90%;
 }
 
