@@ -120,7 +120,6 @@ ul#nav-items > li {
     position: absolute;
     padding: 30px 20px;
     color: #FFFFFF;
-    text-size: 36px;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.1);
     z-index: 200;
@@ -153,6 +152,26 @@ ul#nav-items > li {
     margin-top: 40px;
 }
 
+
+
+/* Products page */
+.grid-container {
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: 240px 240px 240px;
+    grid-auto-rows: 320px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.grid-item {
+    position: relative;
+    background: #FFFFFF url("../images/template.png") center center no-repeat;
+    background-size: 60px 60px;
+    display: inherit;
+    align-items: center;
+}
+
 .product-item {
     position: relative;
     box-shadow: 0 20px 25px 0 rgba(0,0,0,0.12);
@@ -182,23 +201,6 @@ ul#nav-items > li {
 }
 
 
-/* Products page */
-.grid-container {
-    display: grid;
-    grid-gap: 30px 30px;
-    grid-template-columns: 240px 240px 240px;
-    grid-auto-rows: 320px;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-.grid-item {
-    position: relative;
-    background: #FFFFFF url("../images/template.png") center center no-repeat;
-    background-size: 60px 60px;
-    display: inherit;
-    align-items: center;
-}
 
 /* Contact us page */
 .text, .textarea, #submit-button {
@@ -226,27 +228,99 @@ div#contact-form {
 
 
 /* Meet the team page */
+
+/* This is the team-member blocks container 
+    Nothing much to be done here! */
 .team {
-    max-width: 720px;
-    margin: 0 auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-auto-rows: auto;
 }
 
-.team-member {
-    display: flex;
-    align-items: stretch;
-    background: #eee;
-    margin-bottom: 10px;
+/* this is each team member block
+    it is the box containing the image and the description 
+Template to copy style from:
+.product-item {
+    position: relative;
+    box-shadow: 0 20px 25px 0 rgba(0,0,0,0.12);
+    background: #438282;
+    border-radius: 10px;
+    padding-bottom: 60px;
+}
+*/
+.team-member {position: relative;
+    box-shadow: 0 20px 25px 0 rgba(0,0,0,0.12);
+    background: #438282;
+    border-radius: 10px;
+    padding-bottom: 60px;
+
 }
 
-.photo {
-    width: 140px;
-    height: 220px;
-    background: #ddd url("../images/template.png") center center no-repeat;
-    background-size: 60px 60px;
+/* this is the team members image 
+Template to copy style from:
+.product-item > img {
+    width: 180px;
+    margin: 30px;
+}
+*/
+.team-member > img {
+    width: 180px;
+    margin: 30px;
 }
 
-.info {
-    padding: 20px;
-    margin-left: 20px;
-    flex: 1;
+/* This is the team member description container
+    you can adjust the height here 
+Template to copy style from:
+.product-item > p {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #438282;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    color: #438282;
+    height: 60px;
+}
+*/
+.team-member > ul {
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #438282;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    color: #fbfdfd;
+    height: auto
+}
+
+/* This is the rows within the description container
+    Nothing much to be done here! */
+.team-member > ul > li {
+
+}
+
+/* This is the email links within the description
+    you can adjust the email color and remove the under-line for example */
+.team-member > ul > li > a {
+
+}
+
+.center-text {
+    text-align: center;
+    color:#FFFFFF;
+}
+
+.Email-Text:link {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+.contact-color {
+    color: #111111;
 }
