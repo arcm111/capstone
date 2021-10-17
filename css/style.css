@@ -45,8 +45,9 @@ footer > div.content {
 }
 
 img#logo {
+    cursor: pointer;
     width: 100px;
-    margin-left: 40px;
+    margin: 6px 40px;
 }
 
 ul#nav-items {
@@ -284,7 +285,25 @@ Template to copy style from:
     color: #438282;
     height: 60px;
 }
-*/
+
+/* About us page */
+.about-us-section-content { /* this creates grid format*/
+    display: grid;
+    grid-gap: 20px 30px;
+    grid-template-columns: 240px auto;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 960px;
+}
+
+.about-us-section-content > img {  /* this instructs image to only occupy 90% of grid width*/
+    width: 90%;
+}
+
+.about-us-section-content > p {
+   /* font-size: 14px; */
+}
+
 .team-member > ul {
     display: block;
     bottom: 0;
