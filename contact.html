@@ -4,10 +4,11 @@
         <title>Contact us</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/validate.js"></script>
     </head>
     <body>
         <header id="top-nav-bar">
-            <img id="logo" src="images/logo.png" width="60" height="60" />
+            <img id="logo" src="images/logo.png"  onclick="window.location='index.html'" />
             <ul id="nav-items">
                 <li><a class="nav-tab" href="index.html">Home</a></li>
                 <li><a class="nav-tab" href="products.html">Products</a></li>
@@ -20,11 +21,11 @@
             <h1 style="text-align: center;">Contact us</h1>
             <p style="text-align: center;">Please note that our operating hours are Monday-Friday 9am to 5pm, except for bank holidays.
             If you’d like to contact us, use the form below and one of our friendly sales staff will be in touch shortly.</p>
-            <form name="contact-us-form">
-                <input class="input-element" type="text" name="fname" placeholder="First Name..." />
-                <input class="input-element" type="text" name="lname" placeholder="Last Name..." />
-                <input class="input-element" type="text" name="email" placeholder="Email..." />
-                <input class="input-element" type="text" name="email" placeholder="Phone..." />
+            <form name="contact-us-form" onsubmit="return validateForm(this)">
+                <input class="input-element" type="text" name="fname" placeholder="First Name..." onblur="validateString(this)" />
+                <input class="input-element" type="text" name="lname" placeholder="Last Name..." onblur="validateString(this)" />
+                <input class="input-element" type="text" name="email" placeholder="Email..." onblur="validateEmail(this)" />
+                <input class="input-element" type="text" name="email" placeholder="Phone..." onblur="validatePhoneNumber(this)"  />
                 <input class="input-element" type="text" name="email" placeholder="Address..." />
                 <textarea id="input-message" name="msg" rows="4" placeholder="Message..."></textarea>
                 <input id="submit-button" type="submit" value="Submit" />
@@ -33,12 +34,14 @@
         <footer>
             <div class="content">
                 <p>Copyright 2021 Capstone Group 1. All rights reserved!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
-                eget velit mi. Vivamus non iaculis mauris. Vivamus tempor ut sapien ut 
-                tincidunt. Donec gravida eros eu ante porta finibus. Sed malesuada egestas
-                commodo. Curabitur in tellus a arcu tincidunt rutrum. Etiam id tristique 
-                eros. Morbi commodo quam in euismod vehicula. Sed metus ipsum, lacinia 
-                sit amet velit non, commodo tincidunt ligula.</p>
+                <p>We're a leading UK supplier of PPE (Personal Protective 
+                Equipment), workwear, consumables, safety equipment, janitorial 
+                products and safety signage. We've been trusted as a supplier of 
+                these products to a wide variety of industries including 
+                construction, civil engineering, manufacturing and many others 
+                for over 20 years. We are trusted by 1000's of construction 
+                companies and tradesmen to deliver quality products direct to 
+                site on-time, first time.</p>
             </div>
         </footer>
     </body>

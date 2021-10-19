@@ -4,17 +4,20 @@
         <title>Capstone Homepage</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600&display=swap" rel="stylesheet">
         <script type="text/javascript" src="js/slideshow.js"></script>
     </head>
     <body>
         <header id="top-nav-bar">
-            <img id="logo" src="images/logo.png" width="60" height="60" />
+            <img id="logo" src="images/logo.png" onclick="window.location='index.html'" />
             <ul id="nav-items">
                 <li><a class="nav-tab" href="index.html">Home</a></li>
                 <li><a class="nav-tab" href="products.html">Products</a></li>
-                <li><a class="nav-tab" href="about.html">About us</a></li>
-                <li><a class="nav-tab" href="team.html">Meet the team</a></li>
-                <li><a class="nav-tab" href="contact.html">Contact us</a></li>
+                <li><a class="nav-tab" href="about.html">About Us</a></li>
+                <li><a class="nav-tab" href="team.html">Meet The Team</a></li>
+                <li><a class="nav-tab" href="contact.html">Contact Us</a></li>
             </ul>
         </header>
         <section id="slide">
@@ -23,60 +26,186 @@
             <div class="slide-item active">
                 <img class="slide-image" src="images/slides/slide-01.jpg" />
                 <p class="slide-number">1/3</p>
+                <span class="slide-text-background"></span>
                 <div class="slide-text">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
-                    eget velit mi. Vivamus non iaculis mauris. Vivamus tempor ut sapien ut 
-                    sit amet velit non, commodo tincidunt ligula.</p>
+                    <h2 style="color: #222">Making Your Site COVID Secure</h2>
+                    <h3 style="color: #222">Caring for people is at the heart of 
+                    our brand and is core to our company values. We provide a wide 
+                    assortment of PPE equipment to protect you and your 
+                    organization.</h3>
                 </div>
             </div>
             <div class="slide-item">
                 <img class="slide-image" src="images/slides/slide-02.jpg" />
                 <p class="slide-number">2/3</p>
+                <span class="slide-text-background"></span>
                 <div class="slide-text">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
-                    eget velit mi. Vivamus non iaculis mauris. Vivamus tempor ut sapien ut 
-                    sit amet velit non, commodo tincidunt ligula.</p>
+                    <h2>There is a Better Way</h2>
+                    <h3>We help our clients optimise processes and cost by providing
+                    meaningful insights into their buying and utilisation using Big-Data
+                    based technologies.
                 </div>
             </div>
             <div class="slide-item">
                 <img class="slide-image" src="images/slides/slide-03.jpg" />
                 <p class="slide-number">3/3</p>
+                <span class="slide-text-background"></span>
                 <div class="slide-text">
-                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
-                    eget velit mi. Vivamus non iaculis mauris. Vivamus tempor ut sapien ut 
-                    sit amet velit non, commodo tincidunt ligula.</p>
+                    <h2>Benefit from Massive Economies of Scale</h2>
+                    <h3>Because capstone serves millions of customers each month, the
+                    aggregate overhead is able to be optimized much more efficiently.
+                    Resulting in lower costs for customers.
                 </div>
             </div>
         </section>
-        <section>
+        <section id="best-selling-products">
             <h1 class="section-title">Our Best Selling Products</h1>
-            <div id="best-selling">
-                <div class="product-item">
+            <h4>This is a list of our overall most purchased products by our customers. 
+            These items are in high demand and might be temporarily out of stock. 
+            When unavailable please check back later as we keep updating our stock 
+            very frequently. For a full list of our products please visit our products
+            page.</h4>
+            <div id="best-selling" class="grid-container">
+                <div class="product-item grid-item">
                     <img src="images/products/product-09.jpg" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Disposable 3ply non-medical face mask</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item grid-item">
                     <img src="images/products/product-12.jpg" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Hand sanitiser 100ml 5 pack</p>
                 </div>
-                <div class="product-item">
+                <div class="product-item grid-item">
                     <img src="images/products/product-07.jpg" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>PG-901 disposable nitrile diamond grip gloves</p>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="best-selling-product-description">
+                    <ul>
+                        <li>Pons guard standard 3 ply.</li>
+                        <li>Strong and comfortable ear loops.</li>
+                        <li>Medical grade masks type standard.</li>
+                        <li>99.8% bacterial filteration.</li>
+                        <li>Easy to breathe through.</li>
+                        <li>Fiberglass free.</li>
+                    </ul>
+                </div>
+                <div class="best-selling-product-description">
+                    <ul>
+                        <li>Effective, kills 99.9% of bacteria.</li>
+                        <li>Plant-based.</li>
+                        <li>Gentle ingredients.</li>
+                        <li>Suitable for professional use.</li>
+                        <li>Compliant with 10 EU standards.</li>
+                        <li>Moisturizes your skin.</li>
+                    </ul>
+                </div>
+                <div class="best-selling-product-description">
+                    <ul>
+                        <li>Nitrile surgical gloves.</li>
+                        <li>Premium grade gloves.</li>
+                        <li>Latex-free and Hypoallergenic.</li>
+                        <li>Powder free.</li>
+                        <li>Soft and comfortable.</li>
+                        <li>Multi purpose use.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="why-order-from-us">
+            <h1 class="section-title">Why Order From Capstone</h1>
+            <div class="flex-cont">
+                <div class="flex-item">
+                    <div class="image-wrapper">
+                        <img src="images/delivery.svg" />
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>We Will get your order to you on time or earlier. Our 
+                    professional courier services will deliver you order the 
+                    next working day.</p>
+                </div>
+                <div class="flex-item">
+                    <div class="image-wrapper">
+                        <img src="images/support.svg" />
+                    </div>
+                    <h3>Friendly Customer Support</h3>
+                    <p>We are here to help you find what you need. Our knowledgable 
+                    and friendly cutomer support team will make sure all your 
+                    questions are answered.</p>
+                </div>
+                <div class="flex-item">
+                    <div class="image-wrapper">
+                        <img src="images/print.svg" />
+                    </div>
+                    <h3>Customized prints</h3>
+                    <p>We will Make Sure Your Customisations Look Amazing. We will 
+                    have your logo digitised for embroidery or image enhanced ready 
+                    for a digital print.</p>
+                </div>
+            </div>
+        </section>
+        <section id="customers-feedback">
+            <h1>What Customers Say About Us</h1>
+            <div class="quote-container left">
+                <span class="quote-symbol">&rdquo;</span>
+                <blockquote>
+                    I have used Capstone PPE on several occassions for my company 
+                    uniform needs. They have always supplied us efficiently 
+                    offering a professional service and also at brilliant prices. 
+                    The quality of the uniform has been very high and the logos 
+                    attached not only look brilliant but also allow us to 
+                    represent our business to a high level.
+                </blockquote>
+                <div class="customer-info">
+                    <div>
+                        <p class="customer-name">Paul Deller</p>
+                        <p class="customer-profession">Director of Product Management, Celsium</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-container right">
+                <span class="quote-symbol">&rdquo;</span>
+                <blockquote>
+                    Recently had softshell jackets, polos and T-shirt's 
+                    supplied from ppe supplies, can't thank them enough. 
+                    Top quality stuff for the price and the logo added to my 
+                    work gear looks spot on. Would highly recommend these 
+                    guys to anyone for work gear or ppe and will definitely 
+                    use again!
+                </blockquote>
+                <div class="customer-info">
+                    <div>
+                        <p class="customer-name">Shehzan Mohammed</p>
+                        <p class="customer-profession">Providance Health and Services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-container left">
+                <span class="quote-symbol">&rdquo;</span>
+                <blockquote>
+                    Really great company to deal with, I have had a permanent 
+                    account manager assigned to me who is always extremely helpful, 
+                    cant recommend these guys enough.
+                </blockquote>
+                <div class="customer-info">
+                    <div>
+                        <p class="customer-name">Joe Harwich</p>
+                        <p class="customer-profession">Ebay Seller</p>
+                    </div>
                 </div>
             </div>
         </section>
         <footer>
             <div class="content">
                 <p>Copyright 2021 Capstone Group 1. All rights reserved!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur 
-                eget velit mi. Vivamus non iaculis mauris. Vivamus tempor ut sapien ut 
-                tincidunt. Donec gravida eros eu ante porta finibus. Sed malesuada egestas 
-                commodo. Curabitur in tellus a arcu tincidunt rutrum. Etiam id tristique 
-                eros. Morbi commodo quam in euismod vehicula. Sed metus ipsum, lacinia 
-                sit amet velit non, commodo tincidunt ligula.</p>
+                <p>We're a leading UK supplier of PPE (Personal Protective 
+                Equipment), workwear, consumables, safety equipment, janitorial 
+                products and safety signage. We've been trusted as a supplier of 
+                these products to a wide variety of industries including 
+                construction, civil engineering, manufacturing and many others 
+                for over 20 years. We are trusted by 1000's of construction 
+                companies and tradesmen to deliver quality products direct to 
+                site on-time, first time.</p>
             </div>
         </footer>
         <script type="text/javascript">
